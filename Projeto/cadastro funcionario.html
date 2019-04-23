@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
 <link href="index.css" rel="stylesheet">
-<script type="text/javascript" src="index.js"></script>
-
+<script language="javascript" src="cadastro-funcionario.js" ></script>
   <title>cadastro documento</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,28 +36,55 @@
 
 
 <div class="container-fuild" id="d2">
-  <form class="form-group">
-    <label>Nome</label>
-    <input type="text" name="nomet" class="form-control" placeholder="Nome..">
+  <form id="val-form" data-toggle="validator">
+    <div  class="form-group">
+      <label>Nome</label>
+      <input  id="nome" class="form-control" placeholder="Nome.." type="text" required>
+      <div class="help-block with-errors"></div>
+    </div>
+    
     <br>
-    <label>Sobrenome</label>
-     <input type="text" name="nomet" class="form-control" placeholder="Sobrenome">
-      <br>
-   <label>Área de atuação</label>
-   <select class="form-control"> 
-      <option value="">Área de atuação</option>
-      <option value="Admistrativo">Admistrativo</option>
-      <option value="Financeiro">Fincaneiro</option>  
-    </select>
+    <div  class="form-group">
+      <label>Sobrenome</label>
+      <input  id="sobrenome" class="form-control" placeholder="Sobrenome" type="text" required>
+      <div class="help-block with-errors"></div>
+    </div>
     <br>
-    <label>Data de entrada</label>
-    <input type="text"  name="data2" class="form-control" placeholder="Data">
+    <div  class="form-group">
+        <label>Email</label>
+        <input type="email" id="email" class="form-control" placeholder="Email.."
+        data-error="Por favor, informe um e-mail correto." required >
+        <br>
+        <div class="help-block with-errors"></div>
+      </div>
+
+    <div  class="form-group">
+     <label>Área de atuação</label>
+      <select class="form-control" id="areaat"> 
+        <option value="">Área de atuação</option>
+        <option value="Admistrativo">Admistrativo</option>
+        <option value="Financeiro">Fincaneiro</option>  
+      </select>
+    </div>
     <br>
-    <label>CPF</label>
-    <input type="text"  name="Autor" class="form-control" placeholder="CPF">
+    <div  class="form-group">
+      <label>Data de entrada</label>
+      <input type="text"  name="data2" class="form-control" placeholder="Data" id="data-entrada">
+      <div class="help-block with-errors"></div>
+    </div>
+
     <br>
-    <input type="button" value="Enviar"  class="btn btn-primary" style="margin-left:600px;
-    "data-toggle="modal" data-target="#myModal">
+
+    <div class="form-group">
+      <label>CPF</label>
+      <input type="number"  name="Autor" class="form-control" placeholder="CPF" id="cpf">
+      <div class="help-block with-errors"></div>
+    </div>
+
+    <div class="form-group">
+      <input type="button" value="Enviar"  class="btn btn-primary" style="margin-left:600px; margin-bottom: 20px;
+      "data-toggle="modal" data-target="#myModal">
+    </div>
 
     <!--Modal-->
     <div class="modal" id="myModal">
@@ -74,11 +100,16 @@
       <!-- Modal body -->
       <div class="modal-body">
         Funcionário cadastrado com sucesso!!
+        <br>
+        Deseja enviar o email o formulário para o funcionário?
+        <br>
+        <br>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="gatbut1()"">Enviar</button>
       </div>
 
       <!-- Modal footer -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
       </div>
 
     </div>
@@ -87,38 +118,6 @@
 
   </form>
 </div>
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
-
-
-
-
-
-
-
-
-
+<script src="validator.min.js"></script>
   </body>
 </html>
