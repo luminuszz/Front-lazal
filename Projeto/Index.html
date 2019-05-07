@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link href="index.css" rel="stylesheet">
-<script type="text/javascript" src="index.js"></script>
+<link href="css/index.css" rel="stylesheet">
+<script  src="js/index.js"></script>
 
   <title>Index</title>
   <meta charset="utf-8">
@@ -13,7 +13,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
-<body >
+<body style="background-color:white" >
 
 <nav class="navbar navbar-default navbar-fixed-top" style=" background-color:#008000"> 
   <div class="container">
@@ -23,15 +23,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" href="#">LAZAL</a>
+      <a class="navbar-brand" href="Index.html">LAZAL</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#HISTORIA">HISTORIA</a></li>
-        <li><a href="#SERVIÇOS">SERVIÇOS</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#pricing">LOCALIZAÇÃO</a></li>
-        <li><a href="#contact">CONTATO</a></li>
+        <li><a href="#VALORES">VALORES</a></li>
+        <li><a href="#PORTFOLIO">PORTFOLIO</a></li>
+        <li><a href="#LOCALIZAÇAO">LOCALIZAÇÃO</a></li>
+        <li><a href="#CONTATO">CONTATO</a></li>
         <li><a href="Login.html">LOGIN</a></li>
       </ul>
     </div>
@@ -44,32 +44,33 @@
 
 
 
-<div class="jumbotron" style="background-color: #808080;color: #fff;padding: 100px 25px;">
+<div class="jumbotron" style="background:url(foto12.jpg);color: #fff;padding: 100px 25px;">
   <h1>Lazal</h1> 
   <p>Serviços e venda de matéria prima</p> 
   <img src="logo.png" style="margin-left: 800px; width: 300px; " >
 </div>
 
 <div class="container-fluid">
-  <a name="HISTORIA"><h2>Historia</h2></a>
+  <a id="HISTORIA" name="HISTORIA"><h2>Historia</h2></a>
   <h4>Sobre nós</h4> 
-  <p>mais informações</p>
-  <button class="btn btn-default btn-lg">Conheça</button>
+  <div class="container">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut posuere nibh. Maecenas vitae nibh eu ante mattis cursus. Etiam interdum enim eu diam egestas faucibus. Aliquam interdum sapien id tellus malesuada faucibus. Aenean faucibus eros ac magna convallis tempor. Duis eleifend aliquet volutpat. Praesent feugiat non nisi id laoreet. Maecenas at rhoncus sapien. Nam congue sapien volutpat orci lobortis, in consectetur lectus suscipit. Nulla rutrum suscipit velit vitae molestie. In tincidunt ultricies eros, a volutpat elit vulputate eu. Morbi vitae dapibus sem, ac rhoncus ligula. Ut at leo urna.</p>
+  </div>
 </div>
 
-<div class="container-fluid bg-grey">
-  <h2>Valores</h2>
-  <h4><strong>MISSION:</strong> Our mission lorem ipsum..</h4> 
-  <p><strong>VISION:</strong> Our vision Lorem ipsum..
+<div class="container-fluid ">
+    <a id="VALORES" name="VALORES"><h2>VALORES</h2></a>
+  <div class=" container"></div>
+    <h4> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</h4> 
+  </div>
 </div>
 
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
-      <h2>About Company Page</h2>
-      <h4>Lorem ipsum..</h4> 
+      <h2>Sobre nossa empresa</h2>
+      <p>Nam in auctor orci, vitae ultrices ex. In tempor quam id aliquet blandit. Nullam non nisl a eros viverra lacinia facilisis in lorem. Integer vel est ut ipsum aliquet rutrum. Quisque id volutpat nisl, viverra porta quam. Curabitur sed tincidunt nulla</p> 
       <p>Lorem ipsum..</p>
-      <button class="btn btn-default btn-lg">Get in Touch</button>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-signal logo"></span>
@@ -92,9 +93,11 @@
 
 
 
+
+
 <div class="container-fluid text-center bg-grey">
-  <h2>Portfolio</h2>
-  <h4>What we have created</h4>
+    <a id="PORTFOLIO" name="PORTFOLIO"><h2>PORTFOLIO</h2></a>
+  <h4>Veja que oferecemos</h4>
   <div class="row text-center">
     <div class="col-sm-4">
       <div class="thumbnail">
@@ -106,21 +109,27 @@
       <div class="thumbnail">
         <img src="foto1.jpg" alt="Serviços">
         <p><strong></strong></p>
-        <p>Serviços</p>
+        <p>Vendas</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
         <img src="foto3.png" alt="Serviços">
         <p><strong></strong></p>
-        <p>Serviços</p>
+        <p>Orçamentos</p>
       </div>
     </div>
 </div>
 
-
+<div class="container-fluid">
+<a id="LOCALIZAÇAO" name="LOCALIZAÇAO"><h2>LOCALIZAÇÃO</h2></a>
+<div id="map-container-google-3" class="z-depth-1-half map-container-3">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2679.712148781192!2d-38.438512064187165!3d-12.817735659497648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161304767d1c09%3A0x307565710c2b7984!2sLazal+-+Ind%C3%BAstria+Metal%C3%BArgica!5e1!3m2!1spt-BR!2sbr!4v1557186127781!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    
+  </div>
+</div>
 <div class="container-fluid bg-grey">
-  <h2 class="text-center">Contato</h2>
+    <a id="CONTATO" name="CONTATO"><h2>CONTATO</h2></a>
   <div class="row">
     <div class="col-sm-5">
       <p>Resposta em 48 horas</p>
@@ -147,15 +156,15 @@
   </div>
 </div>
 
-<img src="foto1.jpg" style="width:100%">
+<img src="foto1.jpg" style="width:50%">
 
 
 
 <footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
+  <a href="Index.html" title="LAZAL">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>LAZAL<a href="https://www.w3schools.com" title="Visit LAZAL"></a></p> 
+  <p>LAZAL<a href="Index.html" title="Visit LAZAL"></a></p> 
 </footer>
 
   

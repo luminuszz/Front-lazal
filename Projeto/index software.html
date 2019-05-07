@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link href="index.css" rel="stylesheet">
-<script type="text/javascript" src="index.js"></script>
+<link href="css/index.css" rel="stylesheet">
+<link href="css/index_software.css" rel="stylesheet">
+<script src="js/index.js"></script>
 
   <title>Index software</title>
   <meta charset="utf-8">
@@ -29,42 +30,49 @@
 
      <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#Bem vindo">Bem vindo</a></li>
-        <li><span class="glyphicon glyphicon-user" ></span></li>
+        <li>
+          <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Bem vindo
+              </a>
+            
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="usuario.html" >Perfil</a>
+                <a class="dropdown-item" href="Index.html">Encerrar sessão</a>
+              </div>
+          
+            </div>
+        </li>
+        
       </ul>
     </div>
 </nav>
 
 
-<div class="container-fluid text-center" style="margin-top: 50px;">
+<div class="container-fluid text-center">
   <h2>SERVIÇOS</h2>
   <br>
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-7" >
       <a href="cdastro documento.html">
-      <span class="glyphicon glyphicon-file"></span>
-      </a>
-      <h4>Inserir</h4>
-      <p>Inserir documentos</p>
+        <span class="glyphicon glyphicon-file"></span>
+      </a> 
+        <h4>Inserir</h4>
+        <p>Inserir documentos</p>
+     
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4"> 
       <a href="cadastro funcionario.html">
       <span class="glyphicon glyphicon-ok"></span>
       </a>
       <h4>CADASTRO</h4>
       <p>Cadastro de funcionarios...</p>
     </div>
-    <div class="col-sm-4">
-      <a href="usuario.html">
-      <span class="glyphicon glyphicon-user"></span>
-      </a>
-      <h4>USUÁRIO</h4>
-      <p>Minha Conta</p>
-    </div>
+    
     </div>
     <br><br>
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-12" >
       <a href="listagem documento.html">
       <span class="glyphicon glyphicon-th-list"></span>
       </a>
@@ -72,13 +80,6 @@
       <p>Listagem e pesquisa de documentos...</p>
     </div>
     
-    <div class="col-sm-4">
-      <a href="index.html">
-      <span class="glyphicon glyphicon-log-out"></span>
-      </a>
-      <h4>SAIR</h4>
-      <p>Deslogar..</p>
-    </div>
   </div>
 </div>
 

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link href="index.css" rel="stylesheet">
-<script type="text/javascript" src="index.js"></script>
+<link href="css/index.css" rel="stylesheet">
+<script type="text/javascript" src="js/index.js"></script>
 
   <title>cadastro documento</title>
   <meta charset="utf-8">
@@ -39,7 +39,8 @@
 <div class="container-fuild" id="d2">
   <form class="form-group">
     <label>Nome do documento</label>
-    <input type="text" name="nomet" class="form-control" placeholder="Nome..">
+    <input type="text" name="nomet" class="form-control" placeholder="Nome.." required>
+    <div class="help-block with-errors"></div>
     <br>
     <label>Setor</label>
     <select class="form-control">
@@ -62,7 +63,7 @@
       <option value="XRLS">EXCEL</option>
     </select>
     <br> 
-    <input type="file" name="up" class="btn" value="Escolher arquivo">
+   <input type="file" class="btn btn-primary" name="enviar" value="Enviar"> 
     <input type="button" value="Enviar"  class="btn btn-primary" style="margin-left:600px;
     "data-toggle="modal" data-target="#myModal">
 
@@ -125,6 +126,6 @@
 
 
 
-
+<script src="validator.min.js"></script>
   </body>
 </html>

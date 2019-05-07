@@ -2,9 +2,10 @@
   background-color: #f6f6f6;
 }
 
-	
+  
 
-}
+
+
 
 .container-fluid {
   padding: 60px 50px;
@@ -74,12 +75,25 @@ color: #008000;
 
 
 
-<style>
 footer .glyphicon {
   font-size: 20px;
   margin-bottom: 20px;
   color: #008000;
 }
+
+.map-container-3{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  }
+  .map-container-3 iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  }
 
 
 
