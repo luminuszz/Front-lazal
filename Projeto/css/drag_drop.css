@@ -1,0 +1,89 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+p, ol, #message {
+     font-family:'Open Sans';
+}
+#multiple_upload {
+      position:relative;
+}
+#uploadChange {
+      position:absolute;
+      top:2px;
+      left:0;
+      opacity:0.01;
+      border:none;
+      width:355px;
+      padding:10px;
+      z-index:1;
+      cursor:pointer
+}
+#message {
+      border:2px solid #ccc;
+      background:#fff;
+      padding:10px;
+      width:250px;
+      float:left;
+      margin:4px;
+      overflow:hidden;
+      color: #333
+}
+#botao {
+      border:1px solid #ff7b00;
+      background:#ff7b00;
+      color:#ffffff;
+      font-family:'Open Sans';
+      font-size:15px;
+      font-weight:bold;
+      padding:12px 28px;
+      margin:4px 8px;
+}
+#multiple_upload:hover > #botao {
+      background:#662f00;
+      border-color:#662f00;
+} 
+#lista ol {
+      margin-left: -16px; 
+}
+#lista ol li {
+     border-bottom:1px solid #eee;
+     padding:10px;
+    display:block;
+    clear:left;
+    margin-bottom:2px;
+}
+#lista ol li.item_grey{
+     background:#f9f9f9;
+}
+a.remove {
+     text-decoration:none;
+     color:#ff7b00;   
+     display:block;
+     font-size: 16px;
+     width:20px;
+     float:right;
+     font-weight:bold;
+}
+a.remove:hover {
+    color:red;
+}
+img.item {
+    
+    
+}
+img.item {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.box-images {
+    height: 30px;
+    width: 30px;
+    background-color: #eee;
+    border:1px solid #eee;
+    margin-bottom:15px;
+    /* Centralizando imagens */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float:left;
+    margin:0 10px 20px 0;
+}
