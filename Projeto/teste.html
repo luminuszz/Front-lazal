@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 
     <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="teste.css">
+        <link rel="stylesheet" href="css/drag_drop.css">
     </head>
     <body>
-        
+            <form action="" method="POST">
             <p>Utilize a tecla <b>Ctrl</b> para selecionar mais de um arquivo.</p>
             <div id="multiple_upload">
                 <input type="file" multiple="multiple" id="uploadChange" />
-                <div id="message">Selecionar fotos</div>
-                <input type="button" id="botao" value="Upload" />
+                <div id="message">Selecionar arquivos</div>
+                <input type="button" id="botao" value="Upload" accept="application/pdf" required />
                <div id="lista">
                </div>
             </div>
+            <input type="submit" name="envair" class="btn btn-primary">
+        </form>
 
 
 
 
 
 
-
-        <script src="jquery-3.4.1.min.js"></script>
-        <script src="teste.js"></script>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/drag_drop.js"></script>
     </body>
 </html>

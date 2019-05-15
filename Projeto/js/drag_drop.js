@@ -3,7 +3,7 @@ $(function(){
          var id = $(this).attr('id');
         var totalFiles = $(this).get(0).files.length;
         if(totalFiles == 0) {
-          $('#message').text('Selecionar fotos' );
+          $('#message').text('Selecionar arquivos' );
         }
         if ( totalFiles > 1) {
 	        $('#message').text( totalFiles+' arquivos selecionados' );
